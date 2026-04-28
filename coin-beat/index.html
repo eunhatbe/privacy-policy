@@ -3,13 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CoinBeat - Privacy Policy</title>
+  <title>Privacy Policy</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -25,37 +21,41 @@
       text-align: center;
     }
 
-    header .logo {
-      font-size: 28px;
-      font-weight: 700;
-      color: #f0b90b;
-      letter-spacing: 1px;
+    header .logo { font-size: 28px; font-weight: 700; color: #f0b90b; letter-spacing: 1px; }
+    header .subtitle { font-size: 13px; color: #888; margin-top: 6px; }
+
+    .lang-toggle {
+      display: flex;
+      justify-content: center;
+      margin: 24px auto 0;
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 4px;
+      width: fit-content;
+      gap: 4px;
     }
 
-    header .subtitle {
+    .lang-btn {
+      padding: 6px 20px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
       font-size: 13px;
-      color: #888;
-      margin-top: 6px;
-    }
-
-    .container {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    .page-title {
-      font-size: 22px;
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 8px;
-    }
-
-    .updated {
-      font-size: 13px;
+      font-weight: 600;
+      background: transparent;
       color: #666;
-      margin-bottom: 40px;
+      transition: all 0.2s;
     }
+
+    .lang-btn.active {
+      background: #f0b90b;
+      color: #0d0d0d;
+    }
+
+    .container { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    .page-title { font-size: 22px; font-weight: 700; color: #ffffff; margin-bottom: 8px; }
+    .updated { font-size: 13px; color: #666; margin-bottom: 40px; }
 
     .intro {
       background: #1a1a1a;
@@ -67,9 +67,7 @@
       margin-bottom: 40px;
     }
 
-    section {
-      margin-bottom: 36px;
-    }
+    section { margin-bottom: 36px; }
 
     section h2 {
       font-size: 16px;
@@ -80,19 +78,9 @@
       border-bottom: 1px solid #222;
     }
 
-    section p,
-    section li {
-      font-size: 14px;
-      color: #bbb;
-    }
-
-    section ul {
-      padding-left: 20px;
-    }
-
-    section ul li {
-      margin-bottom: 6px;
-    }
+    section p, section li { font-size: 14px; color: #bbb; }
+    section ul { padding-left: 20px; }
+    section ul li { margin-bottom: 6px; }
 
     .highlight-box {
       background: #1a1a1a;
@@ -112,103 +100,188 @@
       color: #bbb;
     }
 
-    .contact-box a {
-      color: #f0b90b;
-      text-decoration: none;
-    }
+    .contact-box a { color: #f0b90b; text-decoration: none; }
+    .contact-box a:hover { text-decoration: underline; }
 
-    .contact-box a:hover {
-      text-decoration: underline;
-    }
+    footer { text-align: center; padding: 24px; font-size: 12px; color: #444; border-top: 1px solid #1a1a1a; }
 
-    footer {
-      text-align: center;
-      padding: 24px;
-      font-size: 12px;
-      color: #444;
-      border-top: 1px solid #1a1a1a;
-    }
+    .content { display: none; }
+    .content.active { display: block; }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">CoinBeat</div>
-    <div class="subtitle">Crypto Futures Demo</div>
+    <div class="logo">eunhatbe</div>
+    <div class="subtitle">Mobile Apps</div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('en')">English</button>
+      <button class="lang-btn" onclick="setLang('ko')">한국어</button>
+    </div>
   </header>
 
-  <div class="container">
-    <div class="page-title">Privacy Policy</div>
-    <div class="updated">Last updated: March 2025</div>
+  <!-- ── English ── -->
+  <div id="content-en" class="content active">
+    <div class="container">
+      <div class="page-title">Privacy Policy</div>
+      <div class="updated">Last updated: March 2025</div>
 
-    <div class="intro">
-      CoinBeat ("the App") values the privacy of its users.
-      This policy explains what information the App collects and how it is used.
+      <div class="intro">
+        This policy applies to all mobile applications developed by eunhatbe ("the Developer").
+        It explains what information our apps collect and how it is used.
+      </div>
+
+      <section>
+        <h2>1. Information We Collect</h2>
+        <div class="highlight-box">
+          Our apps do not require account registration or login by default, and do not collect personal information unless explicitly stated per app.
+          All in-app data (balance, positions, trade history, game data, etc.) is stored locally on your device only.
+        </div>
+      </section>
+
+      <section>
+        <h2>2. Automatically Collected Information</h2>
+        <p>The following information may be collected automatically to improve app stability and fix errors.</p>
+        <ul style="margin-top: 10px;">
+          <li>App crash and error logs</li>
+          <li>Device OS version and app version</li>
+          <li>App usage patterns (anonymous statistics)</li>
+          <li>Location data (only in apps that explicitly require it)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. How We Use Information</h2>
+        <ul>
+          <li>To provide and maintain app functionality</li>
+          <li>To detect errors and improve performance</li>
+          <li>To enhance service quality</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Third-Party Services</h2>
+        <p>Collected information is not shared with third parties except as required by law. However, some data may be processed through the following services.</p>
+        <ul style="margin-top: 10px;">
+          <li>Binance API — for receiving real-time market data (no personal information included)</li>
+          <li>Google AdMob — for serving ads (subject to Google's Privacy Policy)</li>
+          <li>Google Sign-In — for account authentication (only in apps that support it)</li>
+          <li>Firebase — for crash reporting and analytics (anonymous data only)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Data Retention and Deletion</h2>
+        <p>All in-app data is stored locally on your device. Uninstalling the app will permanently delete all associated data. We do not store user data on any server unless the app explicitly provides a cloud sync feature.</p>
+      </section>
+
+      <section>
+        <h2>6. Children's Privacy</h2>
+        <p>Our apps are not intended for children under the age of 13, and we do not knowingly collect personal information from children.</p>
+      </section>
+
+      <section>
+        <h2>7. Changes to This Policy</h2>
+        <p>If this Privacy Policy is updated, we will notify users through an in-app notice or by updating this page.</p>
+      </section>
+
+      <section>
+        <h2>8. Contact</h2>
+        <div class="contact-box">
+          For any questions regarding this Privacy Policy, please contact us at the email below.<br /><br />
+          📧 <a href="mailto:hatbi.dev@gmail.com">hatbi.dev@gmail.com</a>
+        </div>
+      </section>
     </div>
+  </div>
 
-    <section>
-      <h2>1. Information We Collect</h2>
-      <div class="highlight-box">
-        This App does not require account registration or login, and does not collect any personal information.
-        All in-app data (balance, positions, trade history, etc.) is stored locally on your device only.
+  <!-- ── 한국어 ── -->
+  <div id="content-ko" class="content">
+    <div class="container">
+      <div class="page-title">개인정보처리방침</div>
+      <div class="updated">최종 업데이트: 2025년 3월</div>
+
+      <div class="intro">
+        본 방침은 eunhatbe(이하 "개발자")가 개발한 모든 모바일 애플리케이션에 적용됩니다.
+        앱이 수집하는 정보와 그 이용 방법에 대해 안내합니다.
       </div>
-    </section>
 
-    <section>
-      <h2>2. Automatically Collected Information</h2>
-      <p>The following information may be collected automatically to improve app stability and fix errors.</p>
-      <ul style="margin-top: 10px;">
-        <li>App crash and error logs</li>
-        <li>Device OS version and app version</li>
-        <li>App usage patterns (anonymous statistics)</li>
-      </ul>
-    </section>
+      <section>
+        <h2>1. 수집하는 정보</h2>
+        <div class="highlight-box">
+          기본적으로 회원가입, 로그인 절차가 없으며 별도의 개인정보를 수집하지 않습니다.
+          앱 내 모든 데이터(잔고, 포지션, 거래내역, 게임 데이터 등)는 사용자의 기기 내 로컬 저장소에만 저장됩니다.
+        </div>
+      </section>
 
-    <section>
-      <h2>3. How We Use Information</h2>
-      <ul>
-        <li>To provide and maintain app functionality</li>
-        <li>To detect errors and improve performance</li>
-        <li>To enhance service quality</li>
-      </ul>
-    </section>
+      <section>
+        <h2>2. 자동 수집 정보</h2>
+        <p>앱 안정성 및 오류 개선을 위해 아래 정보가 자동으로 수집될 수 있습니다.</p>
+        <ul style="margin-top: 10px;">
+          <li>앱 충돌 및 오류 로그</li>
+          <li>기기 OS 버전 및 앱 버전</li>
+          <li>앱 사용 패턴 (익명 통계)</li>
+          <li>위치 정보 (명시적으로 위치가 필요한 앱에 한함)</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>4. Third-Party Services</h2>
-      <p>Collected information is not shared with third parties except as required by law. However, some data may be processed through the following services.</p>
-      <ul style="margin-top: 10px;">
-        <li>Binance API — for receiving real-time market data (no personal information included)</li>
-        <li>Google AdMob — for serving ads (subject to Google's Privacy Policy)</li>
-      </ul>
-    </section>
+      <section>
+        <h2>3. 정보 이용 목적</h2>
+        <ul>
+          <li>앱 기능 제공 및 유지보수</li>
+          <li>오류 감지 및 성능 개선</li>
+          <li>서비스 품질 향상</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>5. Data Retention and Deletion</h2>
-      <p>All in-app data is stored locally on your device. Uninstalling the App will permanently delete all associated data. We do not store user data on any server.</p>
-    </section>
+      <section>
+        <h2>4. 제3자 제공</h2>
+        <p>수집된 정보는 법령에 의한 경우를 제외하고 제3자에게 제공되지 않습니다. 단, 아래 서비스를 통해 일부 데이터가 처리될 수 있습니다.</p>
+        <ul style="margin-top: 10px;">
+          <li>Binance API — 실시간 시세 데이터 수신 (개인정보 미포함)</li>
+          <li>Google AdMob — 광고 제공 (Google 개인정보처리방침 적용)</li>
+          <li>Google Sign-In — 계정 인증 (해당 기능을 지원하는 앱에 한함)</li>
+          <li>Firebase — 크래시 리포팅 및 분석 (익명 데이터만 해당)</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>6. Children's Privacy</h2>
-      <p>This App is not intended for children under the age of 13, and we do not knowingly collect personal information from children.</p>
-    </section>
+      <section>
+        <h2>5. 데이터 보관 및 삭제</h2>
+        <p>앱 내 데이터는 기기 로컬에만 저장되며, 앱 삭제 시 모든 데이터가 함께 삭제됩니다. 클라우드 동기화 기능을 명시적으로 제공하는 경우를 제외하고 서버에 사용자 데이터를 저장하지 않습니다.</p>
+      </section>
 
-    <section>
-      <h2>7. Changes to This Policy</h2>
-      <p>If this Privacy Policy is updated, we will notify users through an in-app notice or by updating this page.</p>
-    </section>
+      <section>
+        <h2>6. 아동 개인정보 보호</h2>
+        <p>본 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+      </section>
 
-    <section>
-      <h2>8. Contact</h2>
-      <div class="contact-box">
-        For any questions regarding this Privacy Policy, please contact us at the email below.<br /><br />
-        📧 <a href="mailto:hatbi.dev@gmail.com">hatbi.dev@gmail.com</a>
-      </div>
-    </section>
+      <section>
+        <h2>7. 방침 변경</h2>
+        <p>개인정보처리방침이 변경될 경우 앱 내 공지 또는 본 페이지를 통해 안내드립니다.</p>
+      </section>
+
+      <section>
+        <h2>8. 문의</h2>
+        <div class="contact-box">
+          개인정보처리방침에 관한 문의는 아래 이메일로 접수해 주세요.<br /><br />
+          📧 <a href="mailto:hatbi.dev@gmail.com">hatbi.dev@gmail.com</a>
+        </div>
+      </section>
+    </div>
   </div>
 
   <footer>
-    © 2025 CoinBeat. All rights reserved.
+    © 2025 eunhatbe. All rights reserved.
   </footer>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById('content-' + lang).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
 
 </body>
 </html>
