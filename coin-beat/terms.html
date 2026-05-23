@@ -16,7 +16,7 @@
     a { color: #FF8C00; text-decoration: none; }
     .divider { border: none; border-top: 1px solid #2b3139; margin: 32px 0; }
     .lang-toggle { display: flex; gap: 8px; margin-bottom: 24px; }
-    .lang-btn { padding: 6px 16px; border-radius: 6px; border: 1px solid #2b3139; background: transparent; color: #848e9c; font-size: 13px; cursor: pointer; }
+    .lang-btn { padding: 6px 16px; border-radius: 6px; border: 1px solid #2b3139; background: transparent; color: #848e9c; font-size: 13px; cursor: pointer; transition: all 0.2s; }
     .lang-btn.active { background: #FF8C00; border-color: #FF8C00; color: #fff; font-weight: 700; }
     .content { display: none; }
     .content.active { display: block; }
@@ -30,150 +30,159 @@
     <button class="lang-btn" onclick="setLang('ja')">日本語</button>
   </div>
 
-  <!-- English -->
+  <!-- ── English ── -->
   <div id="en" class="content active">
     <h1>Terms of Service</h1>
     <p class="updated">Last updated: May 2026</p>
 
     <h2>1. Overview</h2>
-    <p>These Terms of Service govern your use of <strong>Coin Beat</strong>, a mobile application developed by hatbi. By using the app, you agree to these terms.</p>
+    <p>These Terms of Service ("Terms") govern your access to and use of <strong>Coin Beat</strong>, a mobile application developed by hatbi ("the Developer"). By accessing or using the app, you acknowledge that you have read, understood, and agree to be bound by these Terms.</p>
 
     <hr class="divider" />
 
-    <h2>2. Nature of Service</h2>
-    <p>Coin Beat is a <strong>cryptocurrency trading simulation</strong> app. All trades, balances, profits, and losses within the app are <strong>virtual and have no real monetary value</strong>.</p>
+    <h2>2. Scope and Nature of Service</h2>
+    <p>Coin Beat is strictly a <strong>cryptocurrency trading simulation</strong> application designed for educational and entertainment purposes. All transactions, balances, profits, and losses displayed within the app are <strong>entirely virtual</strong>.</p>
     <ul>
-      <li>In-app USDT and coins are not real assets.</li>
-      <li>Simulation results do not reflect actual investment outcomes.</li>
-      <li>This app does not provide investment advice or financial recommendations.</li>
+      <li>In-app USDT and virtual coins are non-real assets, hold no real-world monetary value, and cannot be redeemed, refunded, or exchanged.</li>
+      <li>Simulation results are purely hypothetical and do not reflect or guarantee actual financial market outcomes.</li>
+      <li>The app does not provide financial, investment, legal, or professional advice.</li>
     </ul>
 
     <hr class="divider" />
 
-    <h2>3. Disclaimer</h2>
-    <p>The app provides real-time market data via the Binance API, but we do not guarantee the accuracy or continuity of such data. We are not liable for:</p>
+    <h2>3. Disclaimer and Limitation of Liability</h2>
+    <p>While the app fetches real-time market data via the Binance API, the Developer does not guarantee the accuracy, completeness, timeliness, or continuity of such data. The Developer shall not be held liable for:</p>
     <ul>
-      <li>Service interruptions due to network issues or maintenance</li>
-      <li>Delays or errors in market data</li>
-      <li>Any direct or indirect damages arising from use of the app</li>
-      <li>Data loss due to device loss, app deletion, or reinstallation</li>
+      <li>Service interruptions, downtime, or data loss caused by network issues, server maintenance, or technical errors.</li>
+      <li>Any inaccuracies, delays, or omissions in the market data provided.</li>
+      <li>Any direct, indirect, incidental, or consequential damages resulting from your use of or inability to use the app.</li>
+      <li>Permanent loss of simulated trading histories or data due to device replacement, app deletion, uninstallation, or caching issues.</li>
     </ul>
 
     <hr class="divider" />
 
-    <h2>4. Advertising</h2>
-    <p>This app uses Google AdMob to display advertisements. Watching ads may be required to unlock certain features (e.g., themes). Ad-related data processing is governed by Google's Privacy Policy.</p>
+    <h2>4. Advertisements and Third-Party Content</h2>
+    <p>This app integrates Google AdMob to display advertisements. Access to certain features, contents, or virtual configurations (such as custom themes) may require viewing advertisements. All data processing related to ads is subject to Google's Privacy Policy.</p>
 
     <hr class="divider" />
 
-    <h2>5. Changes to Terms</h2>
-    <p>These terms may be updated from time to time. Any changes will be communicated via in-app notices or app updates.</p>
+    <h2>5. Modifications to Terms</h2>
+    <p>The Developer reserves the right to modify or replace these Terms at any time. Any changes will be communicated by updating this page or via in-app notifications. Continued use of the app after modifications implies acceptance of the revised Terms.</p>
 
     <hr class="divider" />
 
-    <h2>6. Contact</h2>
-    <p>If you have any questions about these terms, please contact us at:</p>
+    <h2>6. Contact Us</h2>
+    <p>For any questions or clarifications regarding these Terms, please contact us at:</p>
     <p><a href="mailto:hatbi.dev+coinbeat@gmail.com">hatbi.dev+coinbeat@gmail.com</a></p>
   </div>
 
-  <!-- 한국어 -->
+  <!-- ── 한국어 ── -->
   <div id="ko" class="content">
     <h1>이용약관</h1>
     <p class="updated">최종 업데이트: 2026년 5월</p>
 
     <h2>제1조 (목적)</h2>
-    <p>본 약관은 hatbi가 제공하는 모바일 애플리케이션 <strong>Coin Beat</strong>의 이용 조건 및 절차, 이용자와 제공자의 권리·의무에 관한 사항을 규정함을 목적으로 합니다.</p>
+    <p>본 약관은 hatbi(이하 "개발자")가 제공하는 모바일 애플리케이션 <strong>Coin Beat</strong>의 이용 조건 및 절차, 이용자와 제공자의 권리·의무에 관한 사항을 규정함을 목적으로 합니다.</p>
 
     <hr class="divider" />
 
-    <h2>제2조 (서비스 성격)</h2>
-    <p>Coin Beat는 <strong>가상화폐 모의투자 시뮬레이션</strong> 앱입니다. 앱 내의 모든 거래, 잔고, 수익·손실은 <strong>실제 자산과 무관한 가상의 데이터</strong>입니다.</p>
+    <h2>제2조 (서비스 성격 및 범위)</h2>
+    <p>Coin Beat는 <strong>암호화폐 모의투자 시뮬레이션</strong> 앱으로, 교육 및 엔터테인먼트 목적으로만 제공됩니다. 앱 내의 모든 거래, 잔고, 수익 및 손실은 <strong>실제 자산과 무관한 가상의 데이터</strong>입니다.</p>
     <ul>
-      <li>앱 내 USDT 및 코인은 실제 금전적 가치가 없습니다.</li>
-      <li>앱 내 거래 결과는 실제 투자 수익·손실로 이어지지 않습니다.</li>
-      <li>본 앱은 투자 권유 또는 재무 조언을 제공하지 않습니다.</li>
+      <li>앱 내에서 사용되는 USDT 및 가상 코인은 실제 금전적 가치가 없으며, 실제 자산으로 환전, 환불 또는 교환될 수 없습니다.</li>
+      <li>시뮬레이션 결과는 가상의 기록일 뿐이며, 실제 금융 시장에서의 투자 수익이나 성과를 보장하거나 반영하지 않습니다.</li>
+      <li>본 앱은 어떠한 형태의 투자 권유, 재무 조언 또는 금융 컨설팅도 제공하지 않습니다.</li>
     </ul>
 
     <hr class="divider" />
 
-    <h2>제3조 (면책조항)</h2>
-    <p>앱은 바이낸스(Binance) API를 통해 실시간 시세 데이터를 제공하나, 데이터의 정확성·연속성을 보장하지 않습니다. 다음의 경우에 대해 책임을 지지 않습니다.</p>
+    <h2>제3조 (면책조항 및 책임의 제한)</h2>
+    <p>본 앱은 바이낸스(Binance) API를 통해 실시간 시세 데이터를 조회하여 제공하나, 해당 데이터의 정확성, 완전성, 시의성 또는 연속성을 보장하지 않습니다. 개발자는 다음 각 호의 사항에 대해 책임을 지지 않습니다.</p>
     <ul>
-      <li>네트워크 오류, 서버 점검 등으로 인한 서비스 중단</li>
-      <li>시세 데이터 지연 또는 오류</li>
-      <li>앱 사용으로 인한 직·간접적 손해</li>
-      <li>기기 분실, 앱 삭제 등으로 인한 데이터 손실</li>
+      <li>네트워크 오류, 서버 점검, 시스템 장애 등으로 인한 서비스의 일시적 중단 또는 데이터 유실</li>
+      <li>시세 데이터의 지연, 오류 또는 누락</li>
+      <li>앱 이용 또는 이용 불능으로 인해 이용자에게 발생한 직·간접적인 손해</li>
+      <li>기기 변경, 분실, 앱 삭제, 데이터 초기화 등으로 인한 모의투자 기록 및 내부 데이터의 영구적 손실</li>
     </ul>
 
     <hr class="divider" />
 
-    <h2>제4조 (광고)</h2>
-    <p>본 앱은 Google AdMob을 통해 광고를 제공합니다. 광고 시청은 일부 기능(테마 잠금 해제 등) 이용의 조건이 될 수 있으며, 광고 관련 데이터 처리는 Google의 개인정보처리방침을 따릅니다.</p>
+    <h2>제4조 (광고의 게재)</h2>
+    <p>본 앱은 Google AdMob을 포함한 제3자 플랫폼을 통해 광고를 게재합니다. 특정 기능(테마 잠금 해제 등)을 이용하기 위해 광고 시청이 요구될 수 있으며, 광고와 관련된 데이터 처리는 해당 광고 제공업체의 개인정보처리방침을 따릅니다.</p>
 
     <hr class="divider" />
 
-    <h2>제5조 (약관 변경)</h2>
-    <p>본 약관은 관련 법령의 변경 또는 서비스 정책 변경에 따라 수정될 수 있습니다. 변경 시 앱 내 공지 또는 업데이트를 통해 안내합니다.</p>
+    <h2>제5조 (약관의 변경)</h2>
+    <p>개발자는 관련 법령의 개정이나 서비스 정책의 변화에 따라 본 약관을 수시로 변경할 수 있습니다. 약관이 변경될 경우 본 페이지의 업데이트 또는 앱 내 공지사항을 통해 고지하며, 변경된 약관의 효력 발생일 이후에도 앱을 계속 사용하면 변경된 약관에 동의한 것으로 간주됩니다.</p>
 
     <hr class="divider" />
 
-    <h2>제6조 (문의)</h2>
-    <p>이용약관에 관한 문의는 아래 이메일로 연락해 주세요.</p>
+    <h2>제6조 (문의사항)</h2>
+    <p>이용약관 및 서비스 이용에 관한 문의는 아래 이메일 주소로 연락해 주시기 바랍니다.</p>
     <p><a href="mailto:hatbi.dev+coinbeat@gmail.com">hatbi.dev+coinbeat@gmail.com</a></p>
   </div>
 
-  <!-- 日本語 -->
+  <!-- ── 日本語 ── -->
   <div id="ja" class="content">
     <h1>利用規約</h1>
-    <p class="updated">最終更新：2026年5月</p>
+    <p class="updated">最終更新日：2026年5月</p>
 
     <h2>1. 概要</h2>
-    <p>本利用規約は、hatbiが開発したモバイルアプリケーション<strong>Coin Beat</strong>の利用条件を定めるものです。アプリを使用することで、本規約に同意したものとみなされます。</p>
+    <p>本利用規約（以下「本規約」）は、hatbi（以下「開発者」）が開発・提供するモバイルアプリケーション<strong>Coin Beat</strong>の利用条件を定めるものです。本アプリを利用することにより、利用者は本規約のすべての条項に同意したものとみなされます。</p>
 
     <hr class="divider" />
 
-    <h2>2. サービスの性質</h2>
-    <p>Coin Beatは<strong>仮想通貨取引シミュレーション</strong>アプリです。アプリ内のすべての取引、残高、損益は<strong>仮想データであり、実際の金銭的価値はありません</strong>。</p>
+    <h2>2. サービスの性質および範囲</h2>
+    <p>Coin Beatは、教育およびエンターテインメント目的のために設計された<strong>暗号資産のデモトレード（模擬取引）</strong>アプリケーションです。アプリ内で表示されるすべての取引、残高、損益は、<strong>完全に仮想のデータ</strong>です。</p>
     <ul>
-      <li>アプリ内のUSDTおよびコインは実際の資産ではありません。</li>
-      <li>シミュレーション結果は実際の投資成果を反映しません。</li>
-      <li>本アプリは投資アドバイスや金融上の推奨を提供しません。</li>
+      <li>アプリ内のUSDTおよび仮想コインは実際の資産ではなく、実際の金銭的価値は一切ありません。また、現金や実際の暗号資産への換金、払い戻し、交換はできません。</li>
+      <li>シミュレーション結果はあくまで仮想の記録であり、実際の金融市場における投資成果を反映または保証するものではありません。</li>
+      <li>本アプリは、投資助言、財務アドバイス、または金融商品の推奨を行うものではありません。</li>
     </ul>
 
     <hr class="divider" />
 
-    <h2>3. 免責事項</h2>
-    <p>アプリはBinance APIを通じてリアルタイムの市場データを提供しますが、データの正確性や継続性を保証しません。以下の場合について責任を負いません：</p>
+    <h2>3. 免責事項および責任の制限</h2>
+    <p>本アプリはBinance APIを通じてリアルタイムの市場データを取得し提供していますが、データの正確性、完全性、即時性、または継続性を保証するものではありません。開発者は、以下の事由により利用者に生じた損害について、一切の責任を負いません：</p>
     <ul>
-      <li>ネットワーク障害やメンテナンスによるサービス中断</li>
-      <li>市場データの遅延またはエラー</li>
-      <li>アプリの使用から生じる直接的または間接的な損害</li>
-      <li>端末の紛失、アプリの削除・再インストールによるデータ損失</li>
+      <li>ネットワーク障害、サーバーのメンテナンス、システムエラー等によるサービスの中断、遅延、またはデータ消失。</li>
+      <li>提供される市場データの誤り、遅延、または不備。</li>
+      <li>本アプリの使用、または使用不能から生じる直接的・間接的なあらゆる損害。</li>
+      <li>端末の変更、紛失、アプリの削除（アンインストール）等に伴う、デモトレード履歴やアプリ内データの永久的な損失。</li>
     </ul>
 
     <hr class="divider" />
 
-    <h2>4. 広告</h2>
-    <p>本アプリはGoogle AdMobを使用して広告を表示します。一部の機能（テーマのアンロックなど）の利用には広告視聴が必要な場合があります。広告に関するデータ処理はGoogleのプライバシーポリシーに従います。</p>
+    <h2>4. 広告の掲載</h2>
+    <p>本アプリは、Google AdMobを利用して広告を表示します。一部の機能（カスタムテーマのアンロック等）を利用する際、広告の視聴が必要となる場合があります。広告に関連するデータ処理については、Googleのプライバシーポリシーに従います。</p>
 
     <hr class="divider" />
 
-    <h2>5. 規約の変更</h2>
-    <p>本規約は随時更新される場合があります。変更はアプリ内のお知らせまたはアップデートを通じてお知らせします。</p>
+    <h2>5. 利用規約の変更</h2>
+    <p>開発者は、必要に応じて本規約の内容を随時変更することができます。規約が変更される場合は、本ページの更新またはアプリ内通知を通じてお知らせします。変更の告知後も本アプリの利用を継続した場合、利用者は変更後の規約に同意したものとみなされます。</p>
 
     <hr class="divider" />
 
     <h2>6. お問い合わせ</h2>
-    <p>本規約に関するご質問は、以下のメールアドレスまでお問い合わせください。</p>
+    <p>本規約に関するご質問やご不明な点がございましたら、以下のメールアドレスまでお問い合わせください。</p>
     <p><a href="mailto:hatbi.dev+coinbeat@gmail.com">hatbi.dev+coinbeat@gmail.com</a></p>
   </div>
 
   <script>
     function setLang(lang) {
+      // 모든 컨텐츠 숨기기
       document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+      // 모든 버튼 비활성화
       document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+      
+      // 선택한 언어 컨텐츠 보여주기
       document.getElementById(lang).classList.add('active');
-      event.target.classList.add('active');
+      
+      // 클릭된 해당 언어 버튼 활성화 (브라우저 버그 방지 완료)
+      const targetBtn = Array.from(document.querySelectorAll('.lang-btn')).find(btn => btn.getAttribute('onclick').includes("'" + lang + "'"));
+      if (targetBtn) {
+        targetBtn.classList.add('active');
+      }
     }
   </script>
 
