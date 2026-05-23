@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service - 이거 먹어도 돼? (Can My Dog Eat This?)</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      color: #1a1a1a;
+      line-height: 1.8;
+      background: #fff;
+    }
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .tab {
+      padding: 8px 20px;
+      border-radius: 999px;
+      border: 1.5px solid #F0E8DC;
+      background: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      color: #A0896E;
+      font-weight: 500;
+      transition: all 0.15s;
+    }
+    .tab.active {
+      background: #FF8C42;
+      border-color: #FF8C42;
+      color: #fff;
+      font-weight: 700;
+    }
+    .content { display: none; }
+    .content.active { display: block; }
+    h1 { font-size: 24px; font-weight: 800; margin-bottom: 8px; }
+    h2 { font-size: 17px; font-weight: 700; margin-top: 36px; margin-bottom: 8px; }
+    p, li { font-size: 15px; color: #333; }
+    ul { padding-left: 20px; }
+    .updated { font-size: 13px; color: #999; margin-bottom: 32px; }
+    a { color: #FF8C42; }
+  </style>
+</head>
+<body>
+
+  <div class="tabs">
+    <button class="tab" data-lang="ko" onclick="switchLang('ko')">한국어</button>
+    <button class="tab" data-lang="en" onclick="switchLang('en')">English</button>
+    <button class="tab" data-lang="ja" onclick="switchLang('ja')">日本語</button>
+  </div>
+
+  <!-- 한국어 -->
+  <div class="content" id="content-ko">
+    <h1>이용약관</h1>
+    <p class="updated">최종 업데이트: 2026년 5월 10일</p>
+    <p>"이거 먹어도 돼?" 앱(이하 "앱")을 이용해 주셔서 감사합니다. 본 이용약관은 앱 사용에 관한 조건을 규정합니다.</p>
+
+    <h2>1. 서비스 목적</h2>
+    <p>본 앱은 강아지에게 특정 음식이 안전한지 AI를 통해 참고 정보를 제공하는 서비스입니다. 본 앱의 결과는 수의학적 진단을 대체하지 않으며 참고용으로만 사용하시기 바랍니다.</p>
+
+    <h2>2. 면책 조항 (필독)</h2>
+    <ul>
+      <li>본 앱이 제공하는 AI 판별 결과의 정확성, 완전성, 신뢰성을 보장하지 않습니다.</li>
+      <li>사진 품질, 조명, 각도, 이물질 포함 여부 등에 따라 오판독이 발생할 수 있습니다.</li>
+      <li>최종 급여 결정의 책임은 전적으로 보호자에게 있습니다.</li>
+      <li><strong>본 앱의 정보 오류, 오판독으로 인해 발생한 반려견의 질병, 부상, 사망 및 유저의 정신적·물질적 손해에 대해 개발자는 어떠한 법적 책임도 지지 않습니다.</strong></li>
+      <li>본 앱은 수의사의 진료 및 진단을 대체할 수 없습니다. 음식 섭취 후 이상 증상 발생 시 즉시 전문 수의사에게 방문하여 진료를 받으셔야 합니다.</li>
+    </ul>
+
+    <h2>3. 이용 제한</h2>
+    <ul>
+      <li>본 앱을 상업적 목적으로 무단 이용하는 것을 금지합니다.</li>
+      <li>앱의 콘텐츠 및 분석 결과를 무단으로 복제, 배포하는 것을 금지합니다.</li>
+      <li>서비스를 악용하거나 비정상적인 방법으로 서버에 부하를 주는 행위를 금지합니다.</li>
+    </ul>
+
+    <h2>4. 서비스 변경 및 중단</h2>
+    <p>운영상의 필요 또는 AI 모델 업데이트에 따라 서비스 내용을 사전 고지 없이 변경하거나 중단할 수 있습니다. 중요한 변경 사항은 앱 내 공지를 통해 안내드립니다.</p>
+
+    <h2>5. 광고 및 개인정보</h2>
+    <p>본 앱은 Google AdMob을 통한 광고를 포함할 수 있습니다. 광고 표출 및 데이터 수집과 관련된 사항은 Google의 정책 및 본 앱의 별도 '개인정보 처리방침'을 따릅니다.</p>
+
+    <h2>6. 약관 변경</h2>
+    <p>본 약관은 필요에 따라 변경될 수 있으며, 변경 시 앱 내 또는 본 페이지를 통해 공지합니다. 공지 후 서비스를 계속 이용할 경우 변경된 약관에 동의한 것으로 간주합니다.</p>
+
+    <h2>7. 문의</h2>
+    <p>이용약관 관련 문의는 아래 이메일로 연락해 주세요.</p>
+    <p><a href="mailto:hatbi.dev@gmail.com">hatbi.dev@gmail.com</a></p>
+  </div>
+
+  <!-- English -->
+  <div class="content" id="content-en">
+    <h1>Terms of Service</h1>
+    <p class="updated">Last updated: May 10, 2026</p>
+    <p>Thank you for using the "Can My Dog Eat This?" app (the "App"). These Terms of Service govern your use of the App.</p>
+
+    <h2>1. Purpose of Service</h2>
+    <p>This App provides AI-based reference information to help determine whether certain foods are safe for dogs. The results are for informational purposes only and do not constitute veterinary medical advice or diagnosis.</p>
+
+    <h2>2. Disclaimer (Please Read)</h2>
+    <ul>
+      <li>The accuracy, completeness, and reliability of the AI-generated results are not guaranteed.</li>
+      <li>Errors or misidentifications may occur due to photo quality, lighting, camera angles, or the presence of foreign objects.</li>
+      <li>Pet owners are solely and fully responsible for all feeding decisions.</li>
+      <li><strong>The developer shall not be held liable for any illness, injury, death of pets, or any direct/indirect damages to the user arising from errors or misidentifications within the App.</strong></li>
+      <li>This App is not a substitute for professional veterinary care. If your pet shows any abnormal symptoms or ingests hazardous substances, consult a veterinarian immediately.</li>
+    </ul>
+
+    <h2>3. Prohibited Use</h2>
+    <ul>
+      <li>Unauthorized commercial use of this App is strictly prohibited.</li>
+      <li>Reproduction, distribution, or modifications of App content without prior permission is prohibited.</li>
+      <li>Misuse, abuse, or any abnormal operation that loads the server is prohibited.</li>
+    </ul>
+
+    <h2>4. Service Changes and Interruptions</h2>
+    <p>We may modify or discontinue the service at any time without prior notice as needed for operations or AI updates. Significant changes will be communicated through in-app notices.</p>
+
+    <h2>5. Advertising and Privacy</h2>
+    <p>This App may display ads via Google AdMob. Matters regarding ad serving and data collection are subject to Google's policies and the App's separate 'Privacy Policy'.</p>
+
+    <h2>6. Changes to Terms</h2>
+    <p>These Terms may be updated as needed. Changes will be announced through the App or this page. Continued use of the App after updates constitutes acceptance of the revised Terms.</p>
+
+    <h2>7. Contact</h2>
+    <p>For inquiries regarding these Terms, please contact us at:</p>
+    <p><a href="mailto:hatbi.dev@gmail.com">hatbi.dev@gmail.com</a></p>
+  </div>
+
+  <!-- 日本語 -->
+  <div class="content" id="content-ja">
+    <h1>利用規約</h1>
+    <p class="updated">最終更新日：2026年5月10日</p>
+    <p>「これ食べていい？」アプリ（以下「本アプリ」）をご利用いただきありがとうございます。本利用規約は、本アプリの利用条件を定めるものです。</p>
+
+    <h2>1. サービスの目的</h2>
+    <p>本アプリは、特定の食べ物が犬にとって安全かどうかをAIを通じて参考情報として提供するサービスです。本アプリの結果は獣医師の診断に代わるものではなく、あくまでも参考としてご利用ください。</p>
+
+    <h2>2. 免責事項（必読）</h2>
+    <ul>
+      <li>AI判定結果の正確性、完全性、および信頼性は保証されません。</li>
+      <li>写真の画質、照明、角度、異物の混入などによって誤判定が生じる場合があります。</li>
+      <li>最終的な給餌の判断および責任は、すべて飼い主様にあります。</li>
+      <li><strong>本アプリの情報誤りや誤判定によって生じたペットの疾病、負傷、死亡、およびユーザーに生じた直接的・間接的な損害について、開発者は一切の法的責任を負いません。</strong></li>
+      <li>本アプリは獣医師の診察や診断に代わるものではありません。異常が見られた場合や危険なものを摂取した場合は、直ちに専門の獣医師の診察を受けてください。</li>
+    </ul>
+
+    <h2>3. 禁止事項</h2>
+    <ul>
+      <li>本アプリを無断で商業目的に利用することを禁止します。</li>
+      <li>アプリのコンテンツや分析結果を無断で複製・配布・転載することを禁止します。</li>
+      <li>サービスを悪用、または不当にサーバーに負荷をかける方法での利用を禁止します。</li>
+    </ul>
+
+    <h2>4. サービスの変更・中断</h2>
+    <p>運営上の必要やAIモデルのアップデートに応じて、事前の通知なしにサービス内容を変更または中断する場合があります。重要な変更はアプリ内のお知らせを通じてご案内します。</p>
+
+    <h2>5. 広告および個人情報</h2>
+    <p>本アプリはGoogle AdMobを通じた広告を表示する場合があります。広告表示およびデータ収集に関する事項は、Googleのポリシーおよび本アプリの別途「プライバシーポリシー」に従います。</p>
+
+    <h2>6. 規約の変更</h2>
+    <p>本規約は必要に応じて変更される場合があります。変更時はアプリ内または本ページにてお知らせします。変更後も引き続き本アプリを利用された場合、変更後の規約に同意したものとみなします。</p>
+
+    <h2>7. お問い合わせ</h2>
+    <p>利用規約に関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
+    <p><a href="mailto:hatbi.dev@gmail.com">hatbi.dev@gmail.com</a></p>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+      document.getElementById('content-' + lang).classList.add('active');
+      document.querySelector('[data-lang="' + lang + '"]').classList.add('active');
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const lang = ['ko', 'en', 'ja'].includes(params.get('lang')) ? params.get('lang') : 'ko';
+    switchLang(lang);
+  </script>
+
+</body>
+</html>
